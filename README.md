@@ -86,13 +86,24 @@ code and development history hashes. Existing locks/comparisons are protected
 against overwrite. Use a separate output directory for a separately labelled
 experiment; rerunning examined seasons does not make them unseen data.
 
-## Free odds next
+## Free odds collection
 
-Follow [ODDS_SETUP.md](ODDS_SETUP.md). The Odds API currently offers 500 monthly
-credits on its free plan, with current odds and no free historical archive.
-Create the account yourself and keep its key in local `.env`. An odds collector
-is not connected yet; the next step is to log real pre-match prices and evaluate
-prospectively before deciding whether they help. No paid account is needed.
+The collector and market-Poisson forecast logger are implemented. Follow
+[ODDS_SETUP.md](ODDS_SETUP.md): double-click `START_ODDS_COLLECTION.cmd` outside
+Codex, or run `python odds_collector.py watch`. It reads local `.env`, collects
+Premier League 1X2 and totals every 12 hours while the computer stays awake, and
+archives data under ignored `data/odds/`. No scheduled task is installed.
+
+The terminal used for setup could not resolve the provider address, so the live
+account check succeeded when run outside it. An initial timestamp-format rejection
+was fixed; successful post-fix odds collection still needs verification. Synthetic tests cover
+collection, credit limits, quote timing, archiving and market-model mathematics.
+
+[The prospective plan](ODDS_EXPERIMENT_PLAN.md) fixes the later comparison rules.
+The current change logs market forecasts; a refreshed results-only reference,
+paired blend logger and final-result ingestion still need connecting before
+scoring a fair improvement. The historical cache ends in May 2026. Free current
+odds cannot backfill the earlier historical tests.
 
 ## Files
 
@@ -101,6 +112,8 @@ prospectively before deciding whether they help. No paid account is needed.
 - `understat_import.py`: checked joins, identity mapping and xG provenance.
 - `xg_experiment.py`: matched xG study and development lock.
 - `collect_understat.py`, `import_free_data.py`: free source adapters.
+- `odds_collector.py`: local API authentication, quota limits and immutable price archives.
+- `odds_market.py`: half-goal-line market fitting and pre-match forecast logs.
 - `reports/`: aggregate xG results and the original experiment settings hash record.
 - `PROTOTYPE_GUIDE.md`: archived schema and original adapter details.
 - `test_*.py`: chronology, scoring, probability and data-quality checks.

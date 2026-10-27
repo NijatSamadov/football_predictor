@@ -8,10 +8,12 @@ over the existing reference was only 1.2% and remains uncertain. Keep the existi
 reference and collect prospective predictions for both models.
 
 Everything so far used free data and CPU training. No GPU rental or paid feed is
-needed. This remains historical research: live fixtures, odds and lineup updates
-are not connected. The xG pilot supports Premier League senior men only.
+needed. This remains historical research: live lineup updates are not connected. A new odds collector and market
+forecast logger are ready; live requests must run outside this DNS-restricted
+terminal. The account check has passed; post-fix odds collection is pending. The xG pilot supports Premier League senior men only.
 
-To set up the free odds account, follow [ODDS_SETUP.md](ODDS_SETUP.md). Keep the key
+To start collecting odds with the local account key, double-click
+`START_ODDS_COLLECTION.cmd` and follow [ODDS_SETUP.md](ODDS_SETUP.md). Keep the key
 in local `.env` and never send it in chat or commit it.
 
 GitHub contains code and aggregate reports; raw data stay local under `data/`.
