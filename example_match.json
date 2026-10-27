@@ -1,0 +1,29 @@
+{
+  "match_id": "DEMO_NOT_REAL_001",
+  "competition_id": "DEMO_LEAGUE",
+  "season": "DEMO",
+  "segment": "men_senior_club",
+  "home_team_id": "demo:home",
+  "away_team_id": "demo:away",
+  "kickoff_utc": "2020-01-10T15:00:00Z",
+  "neutral_venue": false,
+  "source": "SYNTHETIC_SCHEMA_EXAMPLE_ONLY",
+  "home_goals_90": 2,
+  "away_goals_90": 1,
+  "status": "FINISHED",
+  "score_scope": "REGULATION",
+  "result_available_at_utc": "2020-01-10T18:00:00Z",
+  "availability_basis": "reconstructed",
+  "odds_snapshots": [
+    {
+      "bookmaker": "DEMO",
+      "quoted_at_utc": "2020-01-09T14:00:00Z",
+      "available_at_utc": "2020-01-09T14:01:00Z",
+      "home": 1.9,
+      "draw": 3.5,
+      "away": 4.2,
+      "over25": 1.9,
+      "under25": 1.95
+    }
+  ]
+}

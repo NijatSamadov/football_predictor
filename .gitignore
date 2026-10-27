@@ -1,0 +1,17 @@
+# Provider data, downloaded files and trained artifacts stay local.
+data/
+work/
+models/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+*.joblib
+*.pkl
+*.rds
+*.xlsx

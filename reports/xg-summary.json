@@ -1,0 +1,256 @@
+{
+  "stage": "exploratory_xg_comparison",
+  "selected": "xg_blend_poisson",
+  "matched_control": "control_poisson",
+  "lock_sha256": "a7c98cdb1ee790d37335942bb2311f7f05514b8361a31f70c8092a2349eb58b8",
+  "summary": [
+    {
+      "model": "control_boosted",
+      "group": "2024-25",
+      "matches": 380,
+      "points": 970000,
+      "mean_points": 2552.6315789473683,
+      "exact_hits": 27,
+      "correct_outcomes": 202,
+      "outcome_log_loss": 0.9810006128446785,
+      "outcome_brier": 0.584074629986808,
+      "exact_log_loss": 3.0083385517586696
+    },
+    {
+      "model": "control_boosted",
+      "group": "2025-26",
+      "matches": 380,
+      "points": 898000,
+      "mean_points": 2363.157894736842,
+      "exact_hits": 35,
+      "correct_outcomes": 172,
+      "outcome_log_loss": 1.0426192231908407,
+      "outcome_brier": 0.6299372412254404,
+      "exact_log_loss": 2.9260156986579635
+    },
+    {
+      "model": "control_boosted",
+      "group": "ALL",
+      "matches": 760,
+      "points": 1868000,
+      "mean_points": 2457.8947368421054,
+      "exact_hits": 62,
+      "correct_outcomes": 374,
+      "outcome_log_loss": 1.0118099180177595,
+      "outcome_brier": 0.6070059356061243,
+      "exact_log_loss": 2.967177125208316
+    },
+    {
+      "model": "control_boosted",
+      "group": "openfootball:en.1",
+      "matches": 760,
+      "points": 1868000,
+      "mean_points": 2457.8947368421054,
+      "exact_hits": 62,
+      "correct_outcomes": 374,
+      "outcome_log_loss": 1.0118099180177595,
+      "outcome_brier": 0.6070059356061243,
+      "exact_log_loss": 2.967177125208316
+    },
+    {
+      "model": "control_poisson",
+      "group": "2024-25",
+      "matches": 380,
+      "points": 1024000,
+      "mean_points": 2694.7368421052633,
+      "exact_hits": 40,
+      "correct_outcomes": 196,
+      "outcome_log_loss": 0.9818880600180119,
+      "outcome_brier": 0.585672700684855,
+      "exact_log_loss": 2.958921897941413
+    },
+    {
+      "model": "control_poisson",
+      "group": "2025-26",
+      "matches": 380,
+      "points": 936000,
+      "mean_points": 2463.157894736842,
+      "exact_hits": 34,
+      "correct_outcomes": 183,
+      "outcome_log_loss": 1.0328283335347366,
+      "outcome_brier": 0.6206961770260726,
+      "exact_log_loss": 2.8866983103754533
+    },
+    {
+      "model": "control_poisson",
+      "group": "ALL",
+      "matches": 760,
+      "points": 1960000,
+      "mean_points": 2578.9473684210525,
+      "exact_hits": 74,
+      "correct_outcomes": 379,
+      "outcome_log_loss": 1.007358196776374,
+      "outcome_brier": 0.6031844388554638,
+      "exact_log_loss": 2.922810104158433
+    },
+    {
+      "model": "control_poisson",
+      "group": "openfootball:en.1",
+      "matches": 760,
+      "points": 1960000,
+      "mean_points": 2578.9473684210525,
+      "exact_hits": 74,
+      "correct_outcomes": 379,
+      "outcome_log_loss": 1.007358196776374,
+      "outcome_brier": 0.6031844388554638,
+      "exact_log_loss": 2.922810104158433
+    },
+    {
+      "model": "xg_blend_poisson",
+      "group": "2024-25",
+      "matches": 380,
+      "points": 1066000,
+      "mean_points": 2805.2631578947367,
+      "exact_hits": 41,
+      "correct_outcomes": 205,
+      "outcome_log_loss": 0.9737737778970896,
+      "outcome_brier": 0.5801647171929001,
+      "exact_log_loss": 2.950016527152637
+    },
+    {
+      "model": "xg_blend_poisson",
+      "group": "2025-26",
+      "matches": 380,
+      "points": 958000,
+      "mean_points": 2521.0526315789475,
+      "exact_hits": 37,
+      "correct_outcomes": 184,
+      "outcome_log_loss": 1.0299460746163565,
+      "outcome_brier": 0.618720411472101,
+      "exact_log_loss": 2.8842255011920637
+    },
+    {
+      "model": "xg_blend_poisson",
+      "group": "ALL",
+      "matches": 760,
+      "points": 2024000,
+      "mean_points": 2663.157894736842,
+      "exact_hits": 78,
+      "correct_outcomes": 389,
+      "outcome_log_loss": 1.0018599262567232,
+      "outcome_brier": 0.5994425643325005,
+      "exact_log_loss": 2.9171210141723507
+    },
+    {
+      "model": "xg_blend_poisson",
+      "group": "openfootball:en.1",
+      "matches": 760,
+      "points": 2024000,
+      "mean_points": 2663.157894736842,
+      "exact_hits": 78,
+      "correct_outcomes": 389,
+      "outcome_log_loss": 1.0018599262567232,
+      "outcome_brier": 0.5994425643325005,
+      "exact_log_loss": 2.9171210141723507
+    }
+  ],
+  "comparisons": [
+    {
+      "season": "2024-25",
+      "left": "xg_blend_poisson",
+      "right": "control_poisson",
+      "matches": 380,
+      "mean_points_difference": 110.52631578947368,
+      "approximate_week_bootstrap_95_interval": [
+        -9.762821688367257,
+        234.97303428498054
+      ]
+    },
+    {
+      "season": "2025-26",
+      "left": "xg_blend_poisson",
+      "right": "control_poisson",
+      "matches": 380,
+      "mean_points_difference": 57.89473684210526,
+      "approximate_week_bootstrap_95_interval": [
+        -102.44920843867749,
+        212.4435012677763
+      ]
+    },
+    {
+      "season": "ALL",
+      "left": "xg_blend_poisson",
+      "right": "control_poisson",
+      "matches": 760,
+      "mean_points_difference": 84.21052631578948,
+      "approximate_week_bootstrap_95_interval": [
+        -12.804097311139564,
+        179.45890372131447
+      ]
+    }
+  ],
+  "elapsed_seconds": 36.27051790000405,
+  "sklearn_version": "1.9.0",
+  "caveats": [
+    "Premier League only; same training/test fixtures for every method",
+    "Displayed xG rounded to two decimals and retrospectively reconstructed availability",
+    "Recent seasons previously examined; gains require prospective confirmation"
+  ],
+  "existing_reference": {
+    "summary": [
+      {
+        "model": "legacy_poisson",
+        "group": "2024-25",
+        "matches": 380,
+        "points": 1032000,
+        "mean_points": 2715.7894736842104,
+        "exact_hits": 40,
+        "correct_outcomes": 198,
+        "outcome_log_loss": 0.9851609129910494,
+        "outcome_brier": 0.5883601491542841,
+        "exact_log_loss": 2.9644285203338816
+      },
+      {
+        "model": "legacy_poisson",
+        "group": "2025-26",
+        "matches": 380,
+        "points": 968000,
+        "mean_points": 2547.3684210526317,
+        "exact_hits": 38,
+        "correct_outcomes": 185,
+        "outcome_log_loss": 1.0272154072583957,
+        "outcome_brier": 0.6167540570441579,
+        "exact_log_loss": 2.8826616166080474
+      },
+      {
+        "model": "legacy_poisson",
+        "group": "ALL",
+        "matches": 760,
+        "points": 2000000,
+        "mean_points": 2631.5789473684213,
+        "exact_hits": 78,
+        "correct_outcomes": 383,
+        "outcome_log_loss": 1.0061881601247225,
+        "outcome_brier": 0.6025571030992211,
+        "exact_log_loss": 2.9235450684709643
+      },
+      {
+        "model": "legacy_poisson",
+        "group": "openfootball:en.1",
+        "matches": 760,
+        "points": 2000000,
+        "mean_points": 2631.5789473684213,
+        "exact_hits": 78,
+        "correct_outcomes": 383,
+        "outcome_log_loss": 1.0061881601247225,
+        "outcome_brier": 0.6025571030992211,
+        "exact_log_loss": 2.9235450684709643
+      }
+    ],
+    "comparison": {
+      "left": "xg_blend_poisson",
+      "right": "legacy_poisson",
+      "matches": 760,
+      "mean_points_difference": 31.57894736842105,
+      "approximate_week_bootstrap_95_interval": [
+        -89.7457067371202,
+        165.737011717281
+      ]
+    }
+  }
+}

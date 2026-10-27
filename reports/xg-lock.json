@@ -1,0 +1,31 @@
+{
+  "selected": "xg_blend_poisson",
+  "code_sha256": {
+    "xg_experiment.py": "c58a512d72557f9f6e8859d5baa808efc7bbefc07cff0d1c0ccb15f9a5df13ad",
+    "understat_import.py": "de11b011c924c20aa6f97413dd6118aedb6ed4e9b923020be20522a7932903c2",
+    "predictor.py": "04384fd618604fb03d10f80ee0bb5f31e922bba5ffa61b2f0e67c150d89c9013",
+    "improve_models.py": "0166974b3503ce494f476c6d99844fa3bcfbd0317e14c8d6e3c5a4a799871389",
+    "import_free_data.py": "c547be79200abe25e6ab0112aae585c41a72098e59f745711d1b5a2750dd7462"
+  },
+  "development_rows_sha256": "e181e854b9ab536f631c044760bbcaecedacaed41374e255da968d7975645248",
+  "settings": {
+    "xg_halves_days": [
+      45,
+      180
+    ],
+    "shrinkage": 5,
+    "poisson_alpha": 0.1,
+    "training_half_life_days": 365,
+    "boosting": "same fixed settings as control",
+    "blend_weight": 0.5
+  },
+  "development": [
+    "2021-07-01T00:00:00Z",
+    "2024-07-01T00:00:00Z"
+  ],
+  "exploratory_recent": [
+    "2024-07-01T00:00:00Z",
+    "2026-07-01T00:00:00Z"
+  ],
+  "qualification": "2024/25-2025/26 already examined in earlier experiments; not a fresh independent final test"
+}
