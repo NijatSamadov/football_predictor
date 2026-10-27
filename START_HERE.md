@@ -9,8 +9,9 @@ reference and collect prospective predictions for both models.
 
 Everything so far used free data and CPU training. No GPU rental or paid feed is
 needed. This remains historical research: live lineup updates are not connected. A new odds collector and market
-forecast logger are ready; live requests must run outside this DNS-restricted
-terminal. The account check has passed; post-fix odds collection is pending. The xG pilot supports Premier League senior men only.
+forecast logger are live-tested: 10 fixtures and 10 pre-match forecasts are
+archived locally. Ongoing collection requires `watch` in a normal terminal with
+internet access; keep that window open and the computer awake. The xG pilot supports Premier League senior men only.
 
 To start collecting odds with the local account key, double-click
 `START_ODDS_COLLECTION.cmd` and follow [ODDS_SETUP.md](ODDS_SETUP.md). Keep the key

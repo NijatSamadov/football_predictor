@@ -1,0 +1,25 @@
+{
+  "connection": "verified_by_live_request_outside_restricted_terminal",
+  "received_at_utc": "2026-10-27T10:24:40.874457Z",
+  "provider": "The Odds API",
+  "sport": "soccer_epl",
+  "events": 10,
+  "bookmaker_markets": 416,
+  "quota": {
+    "remaining": 498,
+    "used": 2,
+    "cost": 2
+  },
+  "forecasts": 10,
+  "forecast_generated_at_utc": "2026-10-27T10:24:52.673951Z",
+  "actual_total_lines": [
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5
+  ],
+  "exclusions": {},
+  "completed_results_scored": 0,
+  "qualification": "Successful collection and pre-match forecast logging, not evidence of predictive improvement"
+}

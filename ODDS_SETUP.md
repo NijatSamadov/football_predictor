@@ -79,15 +79,24 @@ HTTP 400/401/403/404/422 rejection is logged separately and allows a corrected
 manual restart, with a fresh quota check before spending. The tool does
 not follow HTTP redirects with the API key.
 
-## Connection status of this setup
+## Verified connection
 
-The terminal in this Codex session cannot resolve the provider's DNS address.
-Running outside it successfully passed the provider account check, confirming
-the key works. The first odds request was rejected due to timestamp precision;
-that request-format bug is now fixed and has a regression test. A successful
-post-fix odds snapshot still needs verification. Run the launcher in a normal Windows terminal
-and look for `"status": "saved"`. A network failure does not prove the key is wrong.
-After collection starts, `status` reports the real archive counts and quota.
+The first successful live request was received at **2026-10-27 10:24:40 UTC**:
+10 Premier League fixtures, 416 bookmaker markets, two credits used, 498 remaining.
+All ten fixtures also have saved pre-match market forecasts, generated at
+10:24:52 UTC. Source hashes and model-code hashes were verified. Actual returned
+total lines include 2.5, 2.75, 3.0, 3.25 and 3.5; integer/quarter lines remain in
+the data archive but are excluded from half-goal probability fitting.
+
+The request succeeded when the user ran the collector outside this Codex
+terminal, whose DNS access remains restricted. An initial fractional-seconds
+request error was corrected and tested. No paid plan was used.
+
+The first successful command collected once. For ongoing collection, run `watch`
+and keep its window open; collection is not installed as a system service or
+scheduled task. A `not_due` message just means the 12-hour cooldown is working.
+The aggregate [connection report](reports/odds-first-snapshot.json) is public;
+provider payloads, individual forecasts and the API key remain local.
 
 ## Testing whether odds help
 

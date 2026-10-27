@@ -94,10 +94,11 @@ Codex, or run `python odds_collector.py watch`. It reads local `.env`, collects
 Premier League 1X2 and totals every 12 hours while the computer stays awake, and
 archives data under ignored `data/odds/`. No scheduled task is installed.
 
-The terminal used for setup could not resolve the provider address, so the live
-account check succeeded when run outside it. An initial timestamp-format rejection
-was fixed; successful post-fix odds collection still needs verification. Synthetic tests cover
-collection, credit limits, quote timing, archiving and market-model mathematics.
+Live connection verified outside the restricted terminal on 27 October 2026:
+10 EPL fixtures, 416 bookmaker markets, 10 pre-match market forecasts, two credits
+used and 498 remaining. See [the aggregate connection report](reports/odds-first-snapshot.json).
+The setup terminal itself still has restricted DNS access. Start `watch` in a
+normal terminal to continue collecting; the first successful run collected once.
 
 [The prospective plan](ODDS_EXPERIMENT_PLAN.md) fixes the later comparison rules.
 The current change logs market forecasts; a refreshed results-only reference,
